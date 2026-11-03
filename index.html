@@ -180,8 +180,8 @@ nav ul a:not(.btn):hover::after{transform:scaleX(1)}
   nav ul li:not(:last-child){display:none}
   .hero .wrap,.about .grid,.contact .grid{grid-template-columns:1fr;gap:38px}
   .hero .wrap{padding:70px 0 80px}
-  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 4%;background:var(--cream);border-top:1px solid rgba(31,77,67,.15)}
-  .callbar a{flex:1;justify-content:center}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 4%;background:transparent;border:0;pointer-events:none}
+  .callbar a{flex:1;justify-content:center;pointer-events:auto;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
   body{padding-bottom:72px}
 }
 </style>
