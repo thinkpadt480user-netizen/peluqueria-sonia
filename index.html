@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peluquería Sonia | Castejón, Navarra</title>
+<meta name="description" content="Peluquería en Castejón, Navarra. Corte, color, peinado y estilismo capilar con trato cercano. Pide cita en el 948 77 08 34.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Peluquería Sonia",
+  "telephone": "+34948770834",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "C. de Châteauneuf Sur Sarthe, 69",
+    "postalCode": "31590",
+    "addressLocality": "Castejón",
+    "addressRegion": "Navarra",
+    "addressCountry": "ES"
+  },
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "21"}
+}
+</script>
+<style>
+:root{
+  --cream:#f7f4ec;
+  --sand:#e8eddf;
+  --ink:#1b2622;
+  --plum:#1f4d43;
+  --plum-dark:#12332b;
+  --rose:#e07a4f;
+  --gold:#c9a24a;
+  --muted:#5d6b66;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Archivo',system-ui,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.025em}
+a{color:inherit}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+section{padding:96px 0}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+h2{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--plum);margin-bottom:18px}
+.lead{color:var(--muted);max-width:56ch;font-size:1.05rem}
+
+header{position:sticky;top:0;z-index:20;background:rgba(247,244,236,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(31,77,67,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.25rem;color:var(--plum);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand span.num{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--plum);color:var(--cream);font-size:.95rem}
+nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+nav a{text-decoration:none;font-size:.93rem;font-weight:500;color:var(--ink)}
+nav a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;background:var(--plum);color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;border:2px solid var(--plum);transition:.2s}
+.btn:hover{background:var(--plum-dark);transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--plum)}
+.btn.ghost:hover{background:var(--plum);color:#fff}
+nav .btn{padding:10px 20px;color:#fff}
+nav .btn:hover{color:#fff}
+
+.hero{padding:0;background:linear-gradient(135deg,var(--plum-dark),var(--plum) 60%,#2f6b5c);color:var(--cream);position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(224,122,79,.18)}
+.hero::before{width:520px;height:520px;right:-140px;top:-160px}
+.hero::after{width:320px;height:320px;left:-120px;bottom:-140px;background:rgba(201,162,74,.15)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding:110px 0 120px}
+.hero h1{font-size:clamp(2.5rem,6vw,4.4rem);margin-bottom:22px}
+.hero h1 em{color:#f6c9a8;font-style:italic}
+.hero p{font-size:1.12rem;max-width:48ch;color:#dfeae5;margin-bottom:34px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn{background:var(--cream);color:var(--plum);border-color:var(--cream)}
+.hero .btn:hover{background:#fff}
+.hero .btn.ghost{background:transparent;color:var(--cream);border-color:rgba(247,244,236,.6)}
+.hero .btn.ghost:hover{background:rgba(247,244,236,.14)}
+.badge{background:rgba(247,244,236,.1);border:1px solid rgba(247,244,236,.25);border-radius:var(--radius);padding:34px;text-align:center;backdrop-filter:blur(6px)}
+.badge .score{font-family:'Archivo',sans-serif;font-size:4.6rem;line-height:1;color:#fff}
+.stars{color:#f0c36b;letter-spacing:.2em;font-size:1.3rem;margin:8px 0 6px}
+.badge small{display:block;color:#dfeae5}
+.badge hr{border:0;border-top:1px solid rgba(247,244,236,.2);margin:22px 0}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.9rem}
+.status i{width:9px;height:9px;border-radius:50%;background:#7bd88f;display:inline-block}
+
+.about{background:var(--cream)}
+.about .grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.pillars{display:grid;gap:18px}
+.pillar{background:#fff;border-radius:var(--radius);padding:24px 26px;border:1px solid rgba(31,77,67,.08);display:flex;gap:18px;align-items:flex-start}
+.pillar .ico{flex:none;width:46px;height:46px;border-radius:50%;background:var(--sand);display:grid;place-items:center;color:var(--plum)}
+.pillar h3{font-size:1.1rem;margin-bottom:4px;color:var(--plum)}
+.pillar p{color:var(--muted);font-size:.95rem}
+
+.services{background:var(--sand)}
+.services .head{text-align:center;margin-bottom:54px}
+.services .head .lead{margin-inline:auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:var(--cream);border-radius:var(--radius);padding:32px 26px;transition:.25s;border:1px solid transparent}
+.card:hover{transform:translateY(-5px);border-color:var(--rose);box-shadow:0 18px 40px -22px rgba(31,77,67,.5)}
+.card svg{color:var(--rose);margin-bottom:18px}
+.card h3{font-size:1.25rem;color:var(--plum);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.note{text-align:center;margin-top:34px;color:var(--muted);font-size:.95rem}
+
+.reviews .head{text-align:center;margin-bottom:50px}
+.reviews .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.review{background:#fff;border-radius:var(--radius);padding:32px;border:1px solid rgba(31,77,67,.08);display:flex;flex-direction:column;gap:16px;position:relative}
+.review::before{content:"\201C";font-family:'Archivo',sans-serif;font-size:5rem;line-height:.6;color:var(--rose);opacity:.35;position:absolute;top:30px;right:24px}
+.review .stars{margin:0;font-size:1rem}
+.review p{font-size:1rem;color:var(--ink)}
+.review footer{margin-top:auto;font-size:.88rem;color:var(--muted)}
+.review footer strong{color:var(--plum);display:block;font-size:.98rem}
+.reply{background:var(--sand);border-radius:12px;padding:12px 16px;font-size:.88rem;color:var(--muted)}
+.reply b{color:var(--plum)}
+.center{text-align:center;margin-top:40px}
+
+.contact{background:var(--plum-dark);color:var(--cream)}
+.contact h2{color:#fff}
+.contact .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:stretch}
+.info{display:grid;gap:24px;margin-top:30px}
+.info > div{display:flex;gap:16px}
+.info svg{flex:none;color:var(--rose);margin-top:3px}
+.info h3{font-family:'Archivo',sans-serif;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.info p,.info a{color:#dfeae5;text-decoration:none}
+.info a:hover{color:#fff;text-decoration:underline}
+.info .tel{font-size:1.5rem;font-family:'Archivo',sans-serif;color:#fff}
+.map{border-radius:var(--radius);overflow:hidden;min-height:420px;border:1px solid rgba(247,244,236,.18)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(.85)}
+.contact .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.contact .btn{background:var(--cream);color:var(--plum);border-color:var(--cream)}
+.contact .btn.ghost{background:transparent;color:var(--cream);border-color:rgba(247,244,236,.6)}
+.contact .btn.ghost:hover{background:rgba(247,244,236,.14)}
+
+footer.site{background:#0b211b;color:#9db3ab;padding:28px 0;font-size:.88rem}
+footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.callbar{display:none}
+
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:linear-gradient(90deg,var(--rose),var(--gold));transform-origin:0 50%;transform:scaleX(0);z-index:50}
+header{transition:box-shadow .3s,background .3s}
+header.scrolled{box-shadow:0 10px 30px -18px rgba(18,51,43,.45)}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.left{transform:translateX(-40px)}
+.reveal.right{transform:translateX(40px)}
+.reveal.in{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-24px,30px) scale(1.06)}}
+@keyframes floaty2{0%,100%{transform:translate(0,0)}50%{transform:translate(34px,-26px)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(123,216,143,.6)}100%{box-shadow:0 0 0 12px rgba(123,216,143,0)}}
+@keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.85)}}
+.hero::before{animation:floaty 14s ease-in-out infinite}
+.hero::after{animation:floaty2 18s ease-in-out infinite}
+.hero .eyebrow,.hero h1,.hero p,.hero .actions,.hero .badge{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .eyebrow{animation-delay:.1s}
+.hero h1{animation-delay:.25s}
+.hero p{animation-delay:.45s}
+.hero .actions{animation-delay:.6s}
+.hero .badge{animation-delay:.5s}
+.status i{animation:pulse 1.8s infinite}
+.badge .stars{animation:twinkle 3s ease-in-out infinite}
+.hero .btn:not(.ghost){position:relative;overflow:hidden}
+.card svg{transition:transform .4s}
+.card:hover svg{transform:rotate(-8deg) scale(1.15)}
+.pillar{transition:transform .3s,box-shadow .3s}
+.pillar:hover{transform:translateX(8px);box-shadow:0 14px 30px -20px rgba(31,77,67,.5)}
+.review{transition:transform .3s,box-shadow .3s}
+.review:hover{transform:translateY(-6px);box-shadow:0 22px 40px -26px rgba(31,77,67,.55)}
+.brand .num{transition:transform .6s}
+.brand:hover .num{transform:rotate(360deg)}
+nav ul a:not(.btn){position:relative}
+nav ul a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--rose);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav ul a:not(.btn):hover::after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal,.hero .eyebrow,.hero h1,.hero p,.hero .actions,.hero .badge{opacity:1;transform:none}
+}
+
+@media(max-width:860px){
+  section{padding:70px 0}
+  nav ul li:not(:last-child){display:none}
+  .hero .wrap,.about .grid,.contact .grid{grid-template-columns:1fr;gap:38px}
+  .hero .wrap{padding:70px 0 80px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:12px 4%;background:var(--cream);border-top:1px solid rgba(31,77,67,.15)}
+  .callbar a{flex:1;justify-content:center}
+  body{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand"><span class="num">S</span>Peluquería Sonia</a>
+    <nav>
+      <ul>
+        <li><a href="#nosotras">Nosotras</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn" href="tel:+34948770834">Pedir cita</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:#f6c9a8">Peluquería en Castejón</span>
+      <h1>Tu pelo, en <em>buenas manos</em></h1>
+      <p>Trato cercano y resultados que se notan. En Peluquería Sonia te dejamos el pelo a tu gusto para que salgas contento con tu cambio.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+34948770834">Llamar: 948 77 08 34</a>
+        <a class="btn ghost" href="#contacto">Cómo llegar</a>
+      </div>
+    </div>
+    <aside class="badge">
+      <div class="score">4,7</div>
+      <div class="stars" aria-label="4,7 sobre 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <small>21 reseñas en Google</small>
+      <hr>
+      <span class="status"><i></i>Calle Châteauneuf Sur Sarthe, 69</span>
+    </aside>
+  </div>
+</section>
+
+<section class="about" id="nosotras">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Nosotras</span>
+      <h2>Una peluquería de confianza en Castejón</h2>
+      <p class="lead">En Peluquería Sonia escuchamos lo que quieres y te dejamos el pelo a tu gusto, con un trato cordial y cercano. Una peluquería de barrio donde los clientes repiten.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div><h3>Trato excelente</h3><p>Un ambiente cercano donde da gusto venir, como dicen nuestros clientes.</p></div>
+      </div>
+      <div class="pillar">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7 7 .6-5.3 4.6 1.7 7L12 17.6 5.6 21.2l1.7-7L2 9.6 9 9z"/></svg></div>
+        <div><h3>Resultados que se notan</h3><p>Sales arreglado y con ganas de volver, aunque vengas con poco tiempo.</p></div>
+      </div>
+      <div class="pillar">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.8 2.5-1.8s2.5.8 2.5 1.8-1 1.6-2.5 2-2.5 1-2.5 2 1 1.8 2.5 1.8 2.5-.8 2.5-1.8"/></svg></div>
+        <div><h3>Estilismo capilar</h3><p>Cortes y looks pensados para ti, con consejo profesional.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Servicios</span>
+      <h2>Todo para tu cabello</h2>
+      <p class="lead">Desde un corte rápido hasta un cambio de look completo.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></svg>
+        <h3>Corte</h3>
+        <p>Corte de mujer, hombre y niños, adaptado a tu estilo y a tu día a día.</p>
+      </article>
+      <article class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.500 3-6 6-10z"/></svg>
+        <h3>Color y mechas</h3>
+        <p>Tintes, mechas y retoques de raíz para un color vivo y natural.</p>
+      </article>
+      <article class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c3-6 6 6 9 0s6 6 9 0M3 18c3-6 6 6 9 0s6 6 9 0M3 6c3-6 6 6 9 0s6 6 9 0"/></svg>
+        <h3>Peinado</h3>
+        <p>Lavado, secado, ondas y recogidos para el día a día o para tus eventos.</p>
+      </article>
+      <article class="card">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.400 5.600L20 10l-5.600 2.400L12 18l-2.400-5.600L4 10l5.600-2.400z"/></svg>
+        <h3>Tratamientos</h3>
+        <p>Cuidado e hidratación para recuperar la fuerza y el brillo de tu pelo.</p>
+      </article>
+    </div>
+    <p class="note">Consulta precios y disponibilidad llamando al 948 77 08 34.</p>
+  </div>
+</section>
+
+<section class="reviews" id="opiniones">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Opiniones</span>
+      <h2>Lo que dicen nuestros clientes</h2>
+      <p class="lead" style="margin-inline:auto">Valoración media de 4,7 sobre 5 en Google.</p>
+    </div>
+    <div class="grid">
+      <article class="review">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Tengo poco de guapo y poco arreglo y aún con eso salgo de aquí tan arreglado que me pone hasta guapo. Con esto lo digo todo.</p>
+        <footer><strong>Jesús Laita</strong>Local Guide en Google</footer>
+      </article>
+      <article class="review">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Excelente trato y como siempre genial. Da gusto ir a que te dejen más jovenzuelo.</p>
+        <div class="reply"><b>Respuesta de la peluquería:</b> Muchas gracias Eugenio.</div>
+        <footer><strong>Eugenio Mozo</strong>Cliente en Google</footer>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Contacto</span>
+      <h2>Reserva tu cita</h2>
+      <p style="color:#dfeae5;max-width:46ch">Llámanos y te buscamos hueco. Estamos en el centro de Castejón.</p>
+      <div class="info">
+        <div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.200 2 19.800 19.800 0 0 1-8.600-3.100 19.500 19.500 0 0 1-6-6A19.800 19.800 0 0 1 2.100 4.200 2 2 0 0 1 4.100 2h3a2 2 0 0 1 2 1.700c.1 1 .4 1.900.7 2.800a2 2 0 0 1-.5 2.100L8.100 9.900a16 16 0 0 0 6 6l1.300-1.300a2 2 0 0 1 2.100-.4c.9.300 1.800.6 2.800.7a2 2 0 0 1 1.700 2z"/></svg>
+          <div><h3>Teléfono</h3><a class="tel" href="tel:+34948770834">948 77 08 34</a></div>
+        </div>
+        <div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><h3>Dirección</h3><p>C. de Châteauneuf Sur Sarthe, 69<br>31590 Castejón, Navarra</p></div>
+        </div>
+        <div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3>Horario</h3><p>Mañanas hasta las 13:00<br>Consulta el horario de tarde y los días de apertura por teléfono</p></div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="tel:+34948770834">Llamar ahora</a>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa+Sonia+Calle+Ch%C3%A2teauneuf+Sur+Sarthe+69+Castej%C3%B3n">Abrir en Google Maps</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Mapa de Peluquería Sonia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Calle+Ch%C3%A2teauneuf+Sur+Sarthe+69,+31590+Castej%C3%B3n,+Navarra&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Peluquería Sonia</span>
+    <span>C. de Châteauneuf Sur Sarthe, 69 · Castejón (Navarra)</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+34948770834">Llamar: 948 77 08 34</a>
+</div>
+
+<script>
+(function(){
+  var bar=document.createElement('div');
+  bar.className='progress';
+  document.body.appendChild(bar);
+  var header=document.querySelector('header');
+  function onScroll(){
+    var h=document.documentElement;
+    var p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+    bar.style.transform='scaleX('+p+')';
+    header.classList.toggle('scrolled',h.scrollTop>10);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  var groups=[
+    ['.about .grid > div:first-child','left'],
+    ['.pillar','right'],
+    ['.services .head',''],
+    ['.card',''],
+    ['.note',''],
+    ['.reviews .head',''],
+    ['.review',''],
+    ['.contact .grid > div:first-child','left'],
+    ['.map','right']
+  ];
+  var targets=[];
+  groups.forEach(function(g){
+    document.querySelectorAll(g[0]).forEach(function(el,i){
+      el.classList.add('reveal');
+      if(g[1])el.classList.add(g[1]);
+      el.style.setProperty('--d',(i*0.12)+'s');
+      targets.push(el);
+    });
+  });
+
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.15});
+  targets.forEach(function(el){io.observe(el);});
+
+  var score=document.querySelector('.badge .score');
+  if(score){
+    var target=4.7,start=null;
+    function tick(t){
+      if(!start)start=t;
+      var k=Math.min((t-start)/1600,1);
+      var eased=1-Math.pow(1-k,3);
+      score.textContent=(target*eased).toFixed(1).replace('.',',');
+      if(k<1)requestAnimationFrame(tick);
+    }
+    score.textContent='0,0';
+    setTimeout(function(){requestAnimationFrame(tick);},700);
+  }
+})();
+</script>
+</body>
+</html>
